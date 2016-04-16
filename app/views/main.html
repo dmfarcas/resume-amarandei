@@ -1,0 +1,149 @@
+
+			<!-- Header -->
+			<header class="row-fluid">
+				<div class="title span7">
+					<h1>Alex Amarandei</h1>
+					<h2>Network Administrator</h2>
+				</div>
+				<div class="social offset1 span4">
+					<ul>
+						<li><i class="icon-home"></i>Montreal, Canada</li>
+						<li><i class="icon-envelope-alt"></i><a href="mailto:alex@amarandei.me?Subject=Hello" target="_top">Email</a></li>
+            <li><i class="icon-link"></i><a href="https://www.linkedin.com/in/alex-amarandei-547b3252" target="_blank">LinkedIn</a></li>
+					</ul>
+				</div>
+			</header>
+
+			<!-- Welcome Text -->
+			<article class="row-fluid">
+				<header class="span3">
+					<h3>Hello, World!</h3>
+				</header>
+				<div class="span9 ">
+					<p class="welcome">I am a network administrator who knows about Systems and I have a passion for Virtualization or anything that is
+new and shiny.
+				</div>
+			</article>
+
+			<!-- Skills -->
+			<article class="row-fluid">
+				<header class="span3">
+					<h3>Certifications</h3>
+				</header>
+				<div class="span9">
+					<div class="row-fluid skills">
+						<ul class="span3">
+							<li><h4>Cisco</h4></li>
+							<li><strong>CCNP Switch</strong></li>
+							<li><strong>CCNP TSHOOT</strong></li>
+							<li><strong>CCNP ROUTE</strong> in progress</li>
+						</ul>
+						<ul class="span3">
+							<li><h4>Alcatel</h4></li>
+							<li><strong>NRS1</strong> in progress</li>
+						</ul>
+              <ul class="span3">
+                <li><h4>RedHat</h4></li>
+                <li><strong>RHCSA OpenStack</strong> in progress </li>
+              </ul>
+					</div>
+				</div>
+			</article>
+      <!-- Skills -->
+      <article class="row-fluid">
+        <header class="span3">
+          <h3>Skills</h3>
+        </header>
+        <div class="span9">
+          <div class="row-fluid skills">
+            <ul class="span6">
+            <li> <strong> Alcatel(77057750) </strong></li>
+            <li> <strong> Extreme Networks </strong></li>
+            <li> <strong> Cisco Technologies </strong></li>
+            <li> <strong> Network Administration and Design</strong></li>
+            <li> <strong> Linux(CentOS, Ubuntu)</strong> </li>
+            </ul>
+
+            <ul class="span6">
+            <li> <strong> Juniper SDN</strong> </li>
+            <li> <strong> OpenStack VMware vSphere</strong></li>
+            <li> <strong> ESXi </strong></li>
+            <li> <strong> Hyper-V </strong></li>
+            <li> <strong> AWS</strong></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+			<!-- Education -->
+			<article class="row-fluid">
+				<header class="span3">
+					<h3>Education</h3>
+				</header>
+				<div class="span9">
+					<h4>LaSalle College</h4>
+					<h5>2010-2013</h5>
+					<p>Network and Systems Administration</p>
+				</div>
+			</article>
+
+			<!-- Work -->
+			<article class="row-fluid">
+				<header class="span3">
+					<h3>Work Experience</h3>
+				</header>
+				<div class="span9">
+          <h4>Canadian National Railway</h4>
+          <h5>Present</h5>
+              <p><strong>Telecommunications Network Operations Supervisor</strong></p>
+
+          <h4>LCI Éducation</h4>
+					<h5>February 2015 – October 2015</h5>
+              <p><strong>IT Technician</strong></p>
+
+					<li>Assess and implement network security policies and best practices in order to mitigate threats and create a better flow of traffic (DHCP Snooping, DAI, Port Security, ACL)</li>
+            <li>Implement a Host Intrusion Detection System (Snort)</li>
+            <li>Implement STP/RSTP/PVST+ on the Extreme BD-8810 Core Switch and the distribution, access layer switches</li>
+            <li>Configure ether channel to provide fault tolerance and load balancing</li>
+            <li>Implemented ELRP (Extreme Loop Recovery Protocol) on the Core switch to prevent a loop free network</li>
+            <li>Configure Syslog sensors in PRTG to receive notifications in case of a loop/downtime.</li>
+            <li>Troubleshoot VoIP issues</li>
+            <li>Automate daily tasks (Powershell, bash scripts)</li>
+            <li>Provide support and troubleshoot issues for end users</li>
+            <li>Implement QoS</li>
+
+            <h4>Acanac</h4>
+  					<h5>June 2014 – November 2014</h5>
+            <p><strong>Tier 1 Support</strong></p>
+
+              <li>Providing support to ADSL/VDSL and Cable customers</li>
+              <li>Providing support configuring VoIP phones</li>
+              <li>Providing support implementing, configuring OpenVPN/SSH tunnels</li>
+              <li>Replying to first level tickets</li>
+              <li>RHEL proficiency</li>
+
+            <h4>Utopia Image inc</h4>
+            <h5>May 2012 – May 2013</h5>
+            <p><strong>Tier 1 Support</strong></p>
+
+              <li>Providing support to users with cable, internet, telephony and mobile services</li>
+              <li>Problem solving in a quick and efficient manner</li>
+              <li>Delivering exceptional customer service</li>
+              <li>Providing advice and training to customers in response to difficulties</li>
+              <li>Providing outstanding service in order to meet and satisfy customer needs</li>
+				</div>
+			</article>
+
+
+
+      <!-- Footer -->
+			<footer>
+        <div class="row">
+        <a href="#/" onclick="javascript:window.print();">Print this page</a>
+        <div class="form-group">
+          &nbsp;
+          </div>
+        <div>Memory: {{systemStats.memory / 1000000 / 1024}} GB  </div>
+        <div>os: {{systemStats.ostype}} {{systemStats.os}} </div>
+        <div>uptime: {{systemStats.uptime | secondsToDateTime | date:'HH:mm:ss'}} </div>
+      </div>
+			</footer>

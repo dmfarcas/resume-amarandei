@@ -295,29 +295,6 @@ module.exports = function (grunt) {
     // concat: {
     //   dist: {}
     // },
-    copy: {
-    dist: {
-        files: [{
-            expand: true,
-            dot: true,
-            cwd: '<%= yeoman.app %>',
-            dest: '<%= yeoman.dist %>',
-            src: [
-                '*.{ico,png,txt}',
-                '.htaccess',
-                'images/{,*/}*.webp',
-                '{,*/}*.html',
-                'styles/fonts/{,*/}*.*'
-            ]
-        },{
-            expand: true,
-            dot: true,
-            cwd: 'bower_components/bootstrap/dist', // change this for font-awesome
-            src: ['fonts/*.*'],
-            dest: '<%= yeoman.dist %>'
-        }]
-    }
-},
 
     imagemin: {
       dist: {

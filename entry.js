@@ -1,5 +1,4 @@
-// server.js
-
+'use strict';
     // set up ========================
     const express  = require('express');
     const app      = express();                               // create our app w/ express
@@ -7,6 +6,8 @@
     const bodyParser = require('body-parser');    // pull information from HTML POST (express4)
     const os = require('os');
     const path = require('path');
+    const sys = require('util');
+    let exec = require('child_process').exec;
 
     // configuration =================
 
@@ -24,15 +25,19 @@
          "cpu": os.cpus(),
          "totalmem": os.totalmem(),
          "loadavg": os.loadavg(),
-         "network": os.networkInterfaces(),
          "ostype": os.type(),
          "os": os.release(),
          "uptime": os.uptime()
        });
      });
 
-     app.get('/api/network', function(req, res) {
-       res.send(os.networkInterfaces());
+     app.get('/api/uptime', function(req, res) {
+       exec("uptime", function (error, stdout, stderr) {
+         res.send(stdout);
+          if (error !== null) {
+            console.log('exec error: ' + error);
+          }
+        });
      });
 
 

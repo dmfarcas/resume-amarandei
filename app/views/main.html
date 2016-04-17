@@ -142,8 +142,8 @@ new and shiny.
         <div class="form-group">
           &nbsp;
           </div>
+					<div>uptime: {{systemStats.uptime}} </div>
         <div>Memory: {{systemStats.memory / 1000000 / 1024}} GB  </div>
         <div>os: {{systemStats.ostype}} {{systemStats.os}} </div>
-        <div>uptime: {{systemStats.uptime | secondsToDateTime | date:'HH:mm:ss'}} </div>
       </div>
 			</footer>

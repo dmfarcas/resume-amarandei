@@ -1,4 +1,3 @@
-"use strict";
     // set up ========================
     const express  = require('express');
     const app      = express();                               // create our app w/ express
@@ -7,7 +6,7 @@
     const os = require('os');
     const path = require('path');
     const sys = require('util');
-    let exec = require('child_process').exec;
+    var exec = require('child_process').exec;
 
     // configuration =================
 

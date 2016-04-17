@@ -5,5 +5,5 @@
     pm2 start entry.js
   ```
 
-  # Live
-    http://amarandei.me
+# Live
+http://amarandei.me

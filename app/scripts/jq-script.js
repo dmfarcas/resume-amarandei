@@ -1,7 +1,15 @@
 // This is what changes body from hidden
 (function($) {
 
-  $("#content").fadeIn(800);
+  $("#content").fadeIn(1300);
+
+  $("#particles-js")
+    .mouseover(function() {
+      $("body").addClass("nohover");
+    })
+    .mouseout(function() {
+    $("body").removeClass("nohover");
+  });
 
   particlesJS("particles-js", {
     "particles": {

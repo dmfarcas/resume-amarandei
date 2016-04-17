@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
     // set up ========================
     const express  = require('express');
     const app      = express();                               // create our app w/ express
@@ -12,7 +12,7 @@
     // configuration =================
 
 
-    app.use(express.static(__dirname + '/app'));                 // set the static files location /public/img will be /img for users
+    app.use(express.static(__dirname + '/dist'));                 // set the static files location /public/img will be /img for users
     app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 
     app.use(morgan('dev'));                                         // log every request to the console

@@ -37,9 +37,11 @@ $ git push origin master
 
 ### Pe server
 ```
-$ git checkout . (iti aduce fisierele inapoi la stadiul de pe repositor)
+$ git checkout . //(iti aduce fisierele inapoi la stadiul de pe repositor)
 $ git pull origin master
-
+$ grunt --force //(crapa testele de karma)
+$ pm2 stop all  //nu sunt sigur daca trebe asta
+$ pm2 start entry.js //nu sunt sigur daca trebe asta
 etc..
 ```
 
